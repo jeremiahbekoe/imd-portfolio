@@ -19,6 +19,8 @@ CSS STRUCTURE:
 1. VARIABLES
 2. GENERAL TYPOGRAPHY
 
+
+
 --------------------------------------------------------------*/
 
 @font-face {
@@ -44,7 +46,7 @@ body {
 
   /* bootstrap */
   --bs-body-font-family: "MyFont", sans-serif;
-  --bs-body-font-size: 1.5rem;
+  --bs-body-font-size: 2rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.7;
   --bs-body-color: #222222;
@@ -161,6 +163,8 @@ a {
 /* btn */
 .btn {
   --bs-btn-border-radius: 0;
+  --bs-btn-font-size: 2rem;
+
 }
 
 .btn-primary {
@@ -224,10 +228,32 @@ a {
   --bs-accordion-active-bg: transparent;
 }
 
+
+.form-control{
+
+  display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+
 /* form control */
 .form-control:focus {
   border-color: #ccc;
   box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, .25);
+  
 }
 
 /* dark theme */
@@ -654,3 +680,4 @@ header {
 .swiper-right {
   right: 0;
 }
+
